@@ -25,9 +25,9 @@ tell application "Mail"
 		{visible:true, sender:senderAddress, subject:theTitle, content:theUrl}
 	tell theMail
 		make new to recipient at end of to recipients with properties Â
-			{address:"user1@example.org", name:"First Recipient"}
+			{address:"user1@example.org", name:"User 1"}
 		make new cc recipient at end of cc recipients with properties Â
-			{address:"user2@example.org", name:"Second Recipient as CC"}
+			{address:"user2.example.org", name:"User 2"}
 		set message signature to signature "privat" of application "Mail"
 	end tell
 end tell
